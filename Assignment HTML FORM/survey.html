@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <style>
+        body{
+            background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        form{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input, textarea, select{
+            padding: 6px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea{
+            width: 100%;
+        }
+
+        button{
+            padding: 8px 15px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #357abd;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Survey Form</h1>
+
+<form>
+
+    <!-- User Name -->
+    <label>User Name:</label>
+    <input type="text" name="username" placeholder="Enter your name" required>
+    <br><br>
+
+    <!-- Feedback -->
+    <label>Feedback:</label><br>
+    <textarea name="feedback" rows="4" placeholder="Write your feedback here..." required></textarea>
+    <br><br>
+
+    <!-- Rating -->
+    <label>Rating:</label><br>
+    <input type="radio" name="rating" value="1">1
+    <input type="radio" name="rating" value="2">2
+    <input type="radio" name="rating" value="3">3
+    <input type="radio" name="rating" value="4">4
+    <input type="radio" name="rating" value="5">5
+    <br><br>
+
+    <!-- Favorite Technology -->
+    <label>Favorite Technology:</label><br>
+    <select name="technology">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>Python</option>
+    </select>
+    <br><br>
+
+    <!-- Subscribe -->
+    <input type="checkbox" name="subscribe"> Subscribe to updates
+    <br><br>
+
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
