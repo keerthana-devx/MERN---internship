@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol+h1{
+            background-color: rgb(228, 219, 207);
+            color: rgb(15, 91, 91);
+        }
+        ul+h1{
+            background-color: bisque;
+            color:rgb(148, 33, 53)
+        }
+    ul p{
+            background-color: aquamarine;
+            color: rgb(13, 13, 67);
+        }
+        h4>p{
+            color: rgb(122, 180, 178);
+            background-color: rgb(117, 83, 83);
+        }
+        ol>li{
+            background-color: rgb(129, 67, 23);
+            color: rgb(173, 173, 84);
+        }
+        body>h1:first-child{
+            background-color: blanchedalmond;
+
+        }
+        ol~h1{
+            background-color: seagreen;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Order list</h1>
+    <ol>
+        <li>liist 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ol>
+    <h1>Unordered list</h1>
+    <ul >
+        <li>
+            <h4>
+                this is paragraph present in unordered list
+            </h4>
+        </li>
+        <li>Unordered list</li>
+        <li>Unordered list</li>
+        <li>Unordered list</li>
+    </ul>
+    
+    <h1> heading in 3rd position</h1>
+    <h3>
+        
+            <h4><p>heading 4</p></h4>
+        
+    </h3>
+</body>
+</html>

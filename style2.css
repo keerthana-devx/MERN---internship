@@ -1,0 +1,22 @@
+lable{
+    color:aliceblue;
+    font-weight: bold;
+    font-size: 25px;
+}
+lable::after{
+    content:"*";
+    color:mediumvioletred;
+
+}
+
+lable:first-of-type:before{
+    content:"👩‍🎓";
+
+}
+lable:last-of-type:before{
+    content:"🔒";
+}
+button{
+    background-color: mediumvioletred;
+    padding: 10px 30px;
+}
