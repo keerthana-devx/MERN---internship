@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job application form</title>
+    <style>
+    
+        form{
+            display: flex;
+            height: 200vh;
+            width: 100vw;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/050/269/947/small/infuse-a-burst-of-creativity-into-your-designs-with-a-wavy-dynamic-background-in-striking-red-and-orange-hues-perfect-for-a-contemporary-and-lively-aesthetic-vector.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+        fieldset{
+            border: none;
+            backdrop-filter: blur(50px);
+            margin: 20px;
+            padding: 30px;
+            border-radius:10px 50px;
+            box-shadow:10px 10px 5px aliceblue;
+        
+        }
+        label{
+            color:aliceblue;
+            font-size:20px;
+            font-weight:bold;
+            font-style: italic;
+            font-family: ;
+
+
+        }
+        button{
+            padding:10px 30px;
+            background-color:rgb(218, 198, 172);
+            font-weight:bold;
+            font-style:italic;
+            font-family:monospace;
+            border-radius:8px;
+        }
+        h1{
+            text-align: center;
+            color:transparent;
+            background-image: linear-gradient(orange,pink);
+            background-clip:text;
+            font-size: 50px;
+        }
+        
+</head>
+</style>
+<body>
+    <form action="https://marketplace.canva.com/EAGnYt64Sg8/1/0/1280w/canva-elegant-minimalist-background-gold-and-beige-instagram-post-6Xkt_lbGKbE.jpg" method="post">
+        <fieldset>
+            <h1 align="center">job application form</h1>
+            <label for="">First name :</label>
+            <input type="text" id="fname"maxlength="8" minlength="4" required placeholder="enter first name">
+            <br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" required placeholder="enter last name"
+            maxlength="8" minlength="4">
+
+
+            <br><br>
+            <lable for="">email :</lable>
+            <input type="email" id="email" required placeholder="enter email">
+            
+            <br><br>
+            <lable for="">Date of Birth :</lable>
+            <input type="date" id="Date Of Birth" >
+
+            <br><br>
+
+            <label for="">Phone Number :</label>
+            <input type="tel" pattern="[6-9]{1}[0-9]{9}" id="Phone Number" required placeholder="enter your phone number">
+            <br><br>
+
+            <label for="">State :</label>
+            <select name="" id="State">
+                <option><value>AP</value></option>
+                <option><value>KR</value></option>
+                <option><value>KR</value></option>
+                <option><value>MP</value></option> 
+
+                
+            </select>
+            <br><br>
+
+            <label for="address">Full Address :</label>
+            <textarea name="" rows="3" cols="30" id="address"
+            required placeholder="enter full address"></textarea>
+
+            <br><br>
+
+            <label for="">Gender :</label>
+            <input type="radio" id="Male" name="Gender">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender">
+            <label for="Female">Female</label>
+            <input type="radio" id="others" name="Gender">
+            <label for="others">others</label>
+
+            <br><br>
+
+            <label for="">Skills :</label>
+            <input type="checkbox">Node js
+            <input type="checkbox">ui/ux
+            <input type="checkbox">Git 
+            <input type="checkbox">mongoDB
+            <input type="checkbox">API
+            <br><br>
+
+            <label for="">Language :</label><br>
+            <input type="range"  >English<br>
+            <input type="range"  >Telugu<br>
+            <input type="range"  >Hindi <br>
+        
+            <br><br>
+
+            <lable for="">Resume :</lable>
+            <input type ="file">
+            <br><br>
+            <lable for="submit">submit :</lable>
+            <input type="button" id="submit" name="submit" >
+
+
+            
+
+
+
+
+         </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial;
+            background-color: #f4f4f4;
+        }
+
+        /* HEADER */
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* FORM */
+        .form-container{
+            width: 300px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        label{
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .btn{
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>NextGen Training Institute</h2>
+            <nav>
+            <a href="./mini-education-website.html">Home</a>
+            <a href="./course.html">Courses</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="./register.html">Register</a>
+        </nav>
+      
+    </header>
+
+    <!-- FORM -->
+    <div class="form-container">
+        <h2>Register Here</h2>
+
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Course:</label>
+            <select>
+                <option>Web Development</option>
+                <option>Python</option>
+                <option>Data Science</option>
+            </select>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+
+            <label>
+                <input type="checkbox"> I agree to terms
+            </label>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

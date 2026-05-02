@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::after{
+            content: " class";
+            color: blueviolet;
+            
+
+        }
+        label::after{
+            content:"*";
+            color: rgb(28, 180, 180);
+        }
+        h1::before{
+            content:"hi! ";
+            color:rgb(12, 86, 61)
+        }
+        label:last-of-type:before{
+            content:"📧";
+        }
+        label:first-of-type::before{
+            content:" 🙍";
+        }
+        h2{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+
+        }
+        h2::first-letter{
+            color:rgb(80, 118, 152);
+            font-size: 50px;
+            font-style: italic;
+            text-shadow: 3px 3px 3px rgb(44, 44, 72);
+            
+        }
+        fieldset{
+            background-color: antiquewhite;
+        }
+        body{
+            background-color: rgb(172, 129, 78);
+        }
+        p::first-line{
+            color:rgb(82, 23, 81);
+            font-style: italic;
+            font-weight: bold;
+        }
+        div::first-line{
+            color:rgb(19, 74, 56)
+
+        }
+        li:first-child::marker{
+            color: rgb(98, 17, 56);
+            
+
+        }
+        li:first-child::marker{
+            content: "⭐";
+        }
+        li:nth-child(3)::marker{
+            color: blueviolet;
+            font-style: italic;
+        }
+        body::selection{
+            color:crimson;
+            background-color: bisque;
+        }
+        div::selection{
+            color: blueviolet;
+            background-color: cadetblue;
+        }
+        input::placeholder{
+            color:rgb(17, 80, 59);
+            font-style: italic;
+            font-weight: bold;
+            
+            
+        }
+        input{
+            color:blueviolet;
+            background-color: rgb(232, 180, 222);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to day-6</h1>
+    <form action="">
+      <fieldset>
+        <h2>Registration Form</h2>
+        <label for="">FirstName</label>
+        <input type="text" placeholder="enter ur first name">
+        <br><br>
+
+        <label for="" id="">Email</label>
+        <input type="text" placeholder="enter ur email">
+        <br><br>
+
+      </fieldset>
+    </form>
+
+
+    <ol>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ol>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, 
+        asperiores a? Tempora odio, facilis, dolore 
+        vitae eligendi dicta vel pariatur voluptatibus vero 
+        similique aut quas sed cumque quod voluptatum aliquam?
+    Dolorum maxime, ipsa necessitatibus hic ipsam 
+    repudiandae. Odit sint eum maxime consequuntur 
+    aspernatur dolores id autem molestias magnam, reiciendis
+     atque pariatur, nisi debitis fugit perspiciatis distinctio natus tempora nobis. Error?
+    Eos, dolor numquam ut fuga voluptates quasi 
+    inventore iure vitae, voluptatum, voluptatem fugiat. 
+    Sed facere quasi assumenda sunt consequatur, 
+    accusantium id ex, deleniti ipsa, quisquam 
+    laborum! Eveniet minima ducimus vero?</p>
+    <div>
+        Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Corrupti suscipit nemo
+        obcaecati molestiae mollitia quisquam 
+        non dolore modi explicabo, optio iusto,
+         alias, aperiam amet reiciendis adipisci.
+          Repellendus repudiandae qui est.
+        Modi possimus id illo magnam iusto unde ullam accusamus illum fuga, quis, voluptatibus totam debitis praesentium nostrum eos inventore eaque ipsa perferendis! Recusandae nam quod aliquam! Sit autem perferendis quam.
+    </div>
+</body>
+</html>

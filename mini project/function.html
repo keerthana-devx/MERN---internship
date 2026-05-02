@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let userDetails = function (userName, password) {
+        // let username="keer@123";
+        //let password="admin@123";
+        //console.log(username);
+        //console.log(password);
+        console.log("this is a functional expression");
+        return userName + " " + password;
+        console.log("HELLO");
+      };
+      // funExample();
+      let result = userDetails("keer@123", "admin@123");
+      console.log(userDetails("ramu", "ramu@345"));
+      console.log(result);
+
+      //NORMAL FUNCTION
+      function employeeDetails(name, role, salary, address) {
+        /* console.log("this is normal function..");
+        console.log("Name: ",name);
+        console.log("Role: ",role);
+        console.log("Salary: ",salary);
+        console.log("Address: ",address);*/
+        return [name, role, salary, address];
+      }
+      emp1 = employeeDetails("keer", "developer", 9000, "kochi");
+      console.log(emp1);
+
+      //immediate invoking function
+      (function () {
+        let apiKey = "AIzaSyBsd5eH3owexfELZmNg4e_ziocINM4288g";
+        console.log("this is a immediate invoking function");
+        return apiKey;
+      })();
+      let a = 10;
+
+      //arrow function
+
+      let arrowFun = () => console.log("Arrow function");
+      arrowFun();
+      arrowFun();
+      arrowFun();
+
+      let test = (skills, name) => {
+        let a = 10;
+        let b = 20;
+        console.log(a, b);
+        console.log("Name :", name, "Skills :", skills);
+      };
+      test(["node js", "express js", "mongoDb", "react js"], "keer");
+
+      //nested function
+      //    function outerFun(){
+      //     function innerFun(){
+      //         console.log("Inner Function");
+      //     }
+      //     console.log("Outer Function");
+      //     innerFun()
+      //     }
+      //     outerFun()
+      //    function outerFun(){
+      //     console.log("outer function");
+      //    return function innerFun(){
+      //          console.log("Inner Function");
+      //      }
+      //    }
+      // outerFun()
+      //   function outerFun(a,b){
+      //         console.log("outer function");
+      //        return function innerFun(){
+      //             console.log(a,b);
+      //              console.log("Inner Function");
+      //          }
+      //        }
+      //        let result1=outerFun(10,20)
+      //        result1()
+      function outerFun(count) {
+        console.log("outer function");
+        return function innerFun() {
+          return count++;
+        }
+      }
+      let result1=outerFun(1);
+      console.log(result1());
+      console.log(result1());
+      console.log(result1());
+      console.log(result1());
+     
+
+
+
+      function homePage(){
+        console.log("Home page");
+
+      }
+      function loginPage(){
+        console.log("login page logic");
+
+      }
+      function registerPage(){
+        console.log("Register Page Logic");
+
+      }
+      homePage(registerPage(),loginPage())
+
+      function display(fun1,fun2){
+        fun1();
+        fun2();
+
+
+      }
+      
+      display(()=>{
+        console.log("first callback function");
+
+      } , ()=>{
+
+        console.log("second call back function");
+      })
+
+
+      //generator function
+
+      function*generator(){
+        yield 10;
+        yield 20;
+        yield 30;
+        yield 40;
+
+        console.log("this is generator function");
+      }
+    //   let nextGen=generator()
+    //   //nextGen.next(); (or)
+    //   generator().next()
+    let nextGen=generator();
+    console.log(nextGen.next().value);
+    console.log(nextGen.next().value);
+    console.log(nextGen.next().value);
+    console.log(nextGen.next().value);
+    console.log(nextGen.next().value);
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-image: linear-gradient(rgb(234, 166, 179),rgb(202, 113, 113),rgb(231, 181, 181));
+        }
+        ol{
+            padding:20px;
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+
+        }
+        li{
+            background-color: rgb(246, 236, 191);
+            color: rgb(89, 33, 141);
+            padding:10px 10px;
+        }
+        @media screen and (max-width:450px) {
+            ol{
+                flex-direction: column;
+
+            }
+            li{
+                margin: 10px;
+                text-align: center;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li>HOME</li>
+                
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+            <li>HELP</li>
+            <li>REGISTER</li>
+        </ol>
+    </nav>
+</body>
+</html>

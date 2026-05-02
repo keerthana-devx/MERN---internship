@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img[alt^='i']{
+            height:400px;
+            width: 400px;
+            border-radius: 40px;
+        }
+       /* h1[id='heading']{
+            color: brown;
+        }
+        h1[id$='ag']{
+            color:blueviolet;
+        }
+        h1[id='heading']{
+            color:rgb(61, 116, 98);
+        }*/
+       /*h1[id|='heading']{
+        color: rgb(53, 127, 127);
+        background-color: antiquewhite;
+       }*/
+       h1[id*='h']{
+        color: rgb(53, 127, 127);
+        background-color: antiquewhite;
+       }
+    </style>
+</head>
+<body>
+    <h1 id="heading">heading</h1>
+    <h1 id="heading-tag">heading</h1>
+    <h1 id="heading tag">heading</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzfInXEM8KLDxOR-NsmGmHyBga8XKXkt7AWQ&s" alt="image1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEFekLd2V0SRi9DBlgGo1GBcnGFGgRwSxJIw&s" alt="image2">
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Schedule</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial;
+            background-color: #f4f4f4;
+        }
+
+        /* HEADER */
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* TITLE */
+        h1{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* TABLE */
+        table{
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 70%;
+            background-color: white;
+        }
+
+        th, td{
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th{
+            background-color: #333;
+            color: white;
+        }
+
+        tr:nth-child(even){
+            background-color: #f9f9f9;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>NextGen Training Institute</h2>
+          <nav>
+            <a href="./mini-education-website.html">Home</a>
+            <a href="./course.html">Courses</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="./register.html">Register</a>
+        </nav>
+    </header>
+
+    <!-- HEADING -->
+    <h1>Course Schedule</h1>
+
+    <!-- TABLE -->
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Instructor</th>
+            <th>Days</th>
+            <th>Time</th>
+        </tr>
+
+        <tr>
+            <td>Web Development</td>
+            <td>Keerrrr</td>
+            <td>Mon - Wed</td>
+            <td>10 AM - 12 PM</td>
+        </tr>
+
+        <tr>
+            <td>Python</td>
+            <td>Srijaaa</td>
+            <td>Tue - Thu</td>
+            <td>2 PM - 4 PM</td>
+        </tr>
+
+        <tr>
+            <td>Data Science</td>
+            <td>Puriii</td>
+            <td>Fri - Sat</td>
+            <td>11 AM - 1 PM</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
