@@ -1,0 +1,20 @@
+React js:
+-->it is the small js library
+
+Feautures:
+-->React js is component based
+-->it supports virtual DOM
+-->using React JS we can build (SPA) a single page of applications
+-->React JS will allow defining algorithm
+
+
+library :
+--------
+      -->collection of Code is called library
+      -->Ex:react JS,jQuery,anime  JS..etc
+
+Frameworks :
+-----------
+    -->Collection of libraries is called Frameworks
+
+    

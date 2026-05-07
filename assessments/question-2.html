@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        background: #e1baba;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      form {
+        background-color: rgb(183, 163, 201);
+        padding: 20px;
+        border-radius: 10px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h2 {
+        text-align: center;
+        background-color: rgb(227, 143, 171);
+        padding: 5px;
+      }
+
+      input {
+        width: 90%;
+        padding: 10px;
+        margin: 8px 0;
+      }
+
+      button {
+        width: 60%;
+        padding: 10px;
+        background: rgb(93, 20, 65);
+        color: rgb(232, 219, 219);
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      button:hover {
+        background: rgb(120, 30, 80);
+      }
+
+      
+      .error {
+        color: red;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form onsubmit="return validateForm();">
+      <h2>Registration Form</h2>
+
+      <input type="text" id="name" placeholder="Enter your name" />
+      <div id="nameError" class="error"></div>
+
+      <input type="email" id="email" placeholder="Enter your email" />
+      <div id="emailError" class="error"></div>
+
+      <input type="password" id="password" placeholder="Enter password" />
+      <div id="passError" class="error"></div>
+
+      <input type="password" id="confirm" placeholder="Confirm password" />
+      <div id="confirmError" class="error"></div>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <script>
+      function validateForm() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let pass = document.getElementById("password").value;
+        let confirm = document.getElementById("confirm").value;
+
+        let valid = true;
+
+        document.getElementById("nameError").innerHTML = "";
+        document.getElementById("emailError").innerHTML = "";
+        document.getElementById("passError").innerHTML = "";
+        document.getElementById("confirmError").innerHTML = "";
+
+        if (name === "") {
+          document.getElementById("nameError").innerHTML = "Name is required";
+          valid = false;
+        }
+
+        if (email === "") {
+          document.getElementById("emailError").innerHTML = "Email is required";
+          valid = false;
+        } else if (!email.includes("@") || !email.includes(".")) {
+          document.getElementById("emailError").innerHTML = "Enter valid email";
+          valid = false;
+        }
+
+        if (pass === "") {
+          document.getElementById("passError").innerHTML =
+            "Password is required";
+          valid = false;
+        }
+
+        if (confirm === "") {
+          document.getElementById("confirmError").innerHTML =
+            "Confirm your password";
+          valid = false;
+        } else if (pass !== confirm) {
+          document.getElementById("confirmError").innerHTML =
+            "Passwords do not match";
+          valid = false;
+        }
+
+        return valid;
+      }
+    </script>
+  </body>
+</html>

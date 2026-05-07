@@ -1,0 +1,43 @@
+/* Background */
+body {
+  background: linear-gradient(to right, #323270, #a581d8,rgb(64, 52, 111));
+  font-family: Arial, sans-serif;
+}
+
+/* Form container */
+.container {
+  max-width: 400px;
+  background: rgb(227, 176, 208);
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 80px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input {
+  border-radius: 8px !important;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  border-radius: 8px !important;
+}
+
+/* Home page */
+.home {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.home h1 {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
